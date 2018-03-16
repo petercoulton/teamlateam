@@ -41,8 +41,8 @@
                   "contentType": {
                     "title": "",
                     "enum": [
-                      "http://petercoulton.github.io/teamlateam/content-types/page-type.json",
-                      "http://petercoulton.github.io/teamlateam/content-types/hero-type.json"
+                      "https://raw.githubusercontent.com/petercoulton/teamlateam/gh-pages/content-types/page-type.json",
+                      "https://raw.githubusercontent.com/petercoulton/teamlateam/gh-pages/content-types/hero-type.json"
                     ]
                   }
                 }
