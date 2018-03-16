@@ -1,0 +1,30 @@
+.hero {
+  padding: 15px;
+  text-align: center;
+  &--middle {
+    align-items: center;
+    justify-content: center;
+  }
+  &--long {
+    min-height: 30vh;
+  }
+  &--super {
+    min-height: 50vh;
+  }
+  &--large {
+    min-height: 75vh;
+  }
+  &__contents {
+    padding: 30px;
+    background-color: $color-grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .hero--super & {
+      background-color: darken($color-grey, 20%);
+      color: #ffffff;
+    }
+  }
+}
