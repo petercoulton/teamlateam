@@ -1,0 +1,36 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/petercoulton/teamlateam/gh-pages/content-types/page-type.json",
+  "title": "Page",
+  "description": "Page",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "heroes": {
+      "title": "Page heroes",
+      "description": "Heroes on the page",
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "Heroes",
+                "enum": [
+                  "https://raw.githubusercontent.com/petercoulton/teamlateam/gh-pages/content-types/hero-type.json"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
