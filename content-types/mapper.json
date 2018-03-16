@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "http://petercoulton.github.io/teamlateam/content-types/mapper.json",
+  "id": "https://petercoulton.github.io/teamlateam/content-types/mapper.json",
   "title": "segment-mapper",
   "description": "Maps User Segments to content",
   "allOf": [
