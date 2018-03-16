@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "",
+  "id": "https://raw.githubusercontent.com/petercoulton/teamlateam/gh-pages/content-types/page-type.json",
   "title": "Page",
   "description": "Page",
   "allOf": [
