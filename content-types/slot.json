@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://petercoulton.github.io/teamlateam/content-types/slot.json",
+  "title": "Content",
+  "description": "",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "description": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "",
+              "enum": [
+                "https://petercoulton.github.io/teamlateam/content-types/mapper.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
