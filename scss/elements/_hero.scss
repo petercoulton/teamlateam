@@ -22,9 +22,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover; 
+    background-position: 50% 50%;
     .hero--super & {
       background-color: darken($color-grey, 20%);
       color: #ffffff;
+    }
+    h1 {
+      text-transform: uppercase;
     }
   }
 }
