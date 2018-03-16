@@ -1,0 +1,15 @@
+.header {
+  &__logo {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 5px;
+    height: 34px;
+    margin-right: 5px;
+    vertical-align: middle;
+    fill: darken($color-grey, 50%);
+  }
+  .navbar-brand {
+    font-family: 'Lato', sans-serif;
+  }
+}
