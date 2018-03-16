@@ -1,0 +1,36 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "",
+  "title": "A Hero",
+  "description": "A page hero",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "image": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+        }
+      ],
+      "title": "The Hero image",
+      "description": "The image for the hero"
+    },
+    "image-alt": {
+      "type": "string",
+      "maxLength": 256,
+      "title": "Image alt text",
+      "description": "The text shown if the image is not loaded",
+      "format": "text"
+    },
+    "super": {
+      "title": "Superhero",
+      "description": "Is this hero a super hero",
+      "type": "boolean"
+    }
+  }
+}
