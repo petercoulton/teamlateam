@@ -17,11 +17,12 @@
       localStorage.setItem('segments', JSON.stringify(persona.segments));
 
       // Choose content
+      const isHome = Boolean($('#home').length);
       const gender = _.maxBy(persona.segments.gender, 'count');
       const type = _.maxBy(persona.segments.type, 'count');
       const genderType = `${gender.value}-${type.value}`;
 
-
+      
 
     });
   });
