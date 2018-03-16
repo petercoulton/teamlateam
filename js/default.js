@@ -1,6 +1,6 @@
 (($, _) => {
   $(() => {
-    const url = "http://c1-qa.adis.ws/v1/content/cmslabs/content-item/53750cf8-f09a-43e0-9ddc-5a890d40ece0?template=lateam&returnInlinedContent=true"
+    const url = "http://c1-qa.adis.ws/v1/content/cmslabs/content-item/0cc6e904-1922-41d6-8cc6-163c9a2d1e67?template=lateam&returnInlinedContent=true"
     $.ajax({url}).done(response => {
       // content.segment
       const content = response.content.segments;
@@ -22,7 +22,7 @@
       const type = _.maxBy(persona.segments.type, 'count');
       const genderType = `${gender.value}-${type.value}`;
 
-      
+
 
     });
   });
