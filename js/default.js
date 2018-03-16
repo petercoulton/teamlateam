@@ -17,9 +17,9 @@
       localStorage.setItem('segments', JSON.stringify(persona.segments));
 
       // Choose content
-      const gender = _(persona.segments.gender).values().max();
-      const type = _.max(persona.segments.type);
-      const genderType = `${gender}-${type}`;
+      const gender = _.maxBy(persona.segments.gender, 'count');
+      const type = _.maxBy(persona.segments.type, 'count');
+      const genderType = `${gender.value}-${type.value}`;
 
 
 
@@ -36,8 +36,8 @@
     constructor(segments) {
       this.segments = Object.assign({
         gender: [
-          {value: 'male', count: 1},
-          {value: 'female', count: 1}
+          {value: 'mens', count: 1},
+          {value: 'women', count: 1}
         ],
         type: [
           {value: 'sports', count: 1},
