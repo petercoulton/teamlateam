@@ -11,6 +11,9 @@
   &--super {
     min-height: 50vh;
   }
+  &--large {
+    min-height: 75vh;
+  }
   &__contents {
     padding: 30px;
     background-color: $color-grey;
