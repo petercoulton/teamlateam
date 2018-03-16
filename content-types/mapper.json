@@ -1,0 +1,56 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "http://petercoulton.github.io/teamlateam/content-types/mapper.json",
+  "title": "segment-mapper",
+  "description": "Maps User Segments to content",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "segments": {
+      "type": "array",
+      "title": "Segments",
+      "description": "List of segment information",
+      "items": {
+        "allOf": [
+          {"$ref": "#/definitions/segment"}
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "segment": {
+      "type": "object",
+      "properties": {
+        "segment": {
+          "type": "string",
+          "title": "Name of the segment"
+        },
+        "content": {
+          "type": "array",
+          "title": "Possible content for this segment",
+          "description": "",
+          "items": {
+            "allOf": [
+              { "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "",
+                    "enum": [
+                      "http://petercoulton.github.io/teamlateam/content-types/page-type.json",
+                      "http://petercoulton.github.io/teamlateam/content-types/hero-type.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
