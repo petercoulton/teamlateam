@@ -37,11 +37,11 @@
     constructor(segments) {
       this.segments = Object.assign({
         gender: [
-          {value: 'mens', count: 1},
+          {value: 'men', count: 1},
           {value: 'women', count: 1}
         ],
         type: [
-          {value: 'sports', count: 1},
+          {value: 'sport', count: 1},
           {value: 'casual', count: 1}
         ]
       }, segments);
